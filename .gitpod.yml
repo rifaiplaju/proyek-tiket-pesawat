@@ -1,0 +1,9 @@
+# Perintahkan Gitpod untuk membuka port server PHP kita
+ports:
+  - port: 8080
+    onOpen: open-preview # Otomatis buka preview website saat workspace siap
+
+# Tugas yang dijalankan saat workspace dimulai
+tasks:
+  - init: echo 'Workspace siap!'
+    command: php -S 0.0.0.0:8080 -t . # Jalankan server PHP bawaan
