@@ -1,0 +1,69 @@
+/* Pengaturan dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Wadah utama formulir pencarian */
+.search-container {
+    max-width: 800px;
+    margin: 20px auto; /* auto di kiri kanan membuatnya ke tengah */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur tata letak form menggunakan Flexbox agar rapi */
+form {
+    display: flex;
+    flex-wrap: wrap; /* Agar bisa turun ke bawah jika tidak muat */
+    gap: 20px; /* Jarak antar elemen form */
+    align-items: flex-end; /* Membuat elemen sejajar di bagian bawah */
+}
+
+.form-group {
+    flex: 1; /* Membuat setiap grup input punya lebar yang fleksibel */
+    min-width: 150px; /* Lebar minimum sebelum turun ke baris baru */
+}
+
+/* Styling untuk label dan input */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar total */
+}
+
+/* Styling untuk tombol */
+.search-button {
+    flex-basis: 100%; /* Membuat tombol mengambil lebar penuh di baris baru */
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
